@@ -3,7 +3,7 @@ import styles from "./comments.module.css"
 import Link from "next/link";
 
 const Comments = () => {
-    const status = "unauthenticated";
+    const status = "authenticated";
   return (
     <div className={styles.container}>
         <h1 className={styles.title}> Comments</h1>
