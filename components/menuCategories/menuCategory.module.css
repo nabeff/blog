@@ -13,25 +13,26 @@
   }
   
   .categoryItem.style {
-    background-color: #57c4ff31;
+    background-color: #3179ff50;
   }
   
   .categoryItem.fashion {
-    background-color: #da85c731;
+    background-color: #cf66b84d;
   }
-  
   .categoryItem.food {
-    background-color: #7fb88133;
+    background-color: #0af71249;
   }
   
   .categoryItem.travel {
-    background-color: #ff795736;
+    background-color: #fc360452;
   }
   
   .categoryItem.culture {
-    background-color: #ffb04f45;
+    background-color: #ffa63962;
   }
   
   .categoryItem.coding {
-    background-color: #5e4fff31;
+    background-color: #1cc0e95d;
   }
+
+

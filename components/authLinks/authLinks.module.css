@@ -16,6 +16,9 @@
     height: 2px;
     background-color: var(--textColor);
   }
+  .link:hover{
+    font-weight: 900;
+  }
   
   .responsiveMenu{
     position: absolute;

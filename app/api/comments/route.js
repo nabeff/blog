@@ -3,8 +3,6 @@ import prisma from "@/app/utils/connect";
 import { getAuthSession } from "@/app/utils/auth";
 
 // GET ALL COMMENTS OF A POST
-
-// GET ALL COMMENTS OF A POST
 export const GET = async (req) => {
   const { searchParams } = new URL(req.url);
 

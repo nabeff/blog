@@ -48,7 +48,22 @@
     padding-left: 80px;
     padding-right: 80px;
   }
+  .ql-container{
+    font-size: 28px !important;
+  }
   
+  .quill > .ql-container > .ql-editor.ql-blank::before{
+    color: #b3b3b1;
+  }
+  
+  .ql-tooltip-editor input{
+    display: none;
+  }
+
+  .ql-toolbar button {
+    display: none;
+  }
+
   @media screen and (max-width: 1536px) {
     .wrapper {
       max-width: 1366px;
@@ -77,10 +92,4 @@
     }
   }
   
-  .ql-container{
-    font-size: 28px !important;
-  }
   
-  .quill > .ql-container > .ql-editor.ql-blank::before{
-    color: #b3b3b1;
-  }

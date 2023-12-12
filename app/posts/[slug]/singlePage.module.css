@@ -43,13 +43,20 @@
   }
   
   .imageContainer {
+    margin-top: 3rem;
     flex: 1;
     height: 350px;
+    width: 100px;
+   
     position: relative;
   }
   
   .image {
     object-fit: cover;
+    height: 150px;
+    width: 150px;
+    border: 10px gray solid ;
+    
   }
   
   .content {

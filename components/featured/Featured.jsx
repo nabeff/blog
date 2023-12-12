@@ -6,21 +6,21 @@ const Featured = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <b>Hey, Bloggers </b> Discover and share stories.
+      Unlock<b> the Magic </b>  in Your Story Now
       </h1>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
-          <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+          <Image src="/food.png" alt="" fill className={styles.image} />
         </div>
         <div className={styles.textContainer}>
-          <h1 className={styles.postTitle}>Lorem ipsum dolor sit amet alim consectetur adipisicing elit.</h1>
+          <h1 className={styles.postTitle}>Create a blog
+worth sharing</h1>
           <p className={styles.postDesc}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Cupiditate, quam nisi magni ea laborum inventore voluptatum
-            laudantium repellat ducimus unde aspernatur fuga. Quo, accusantium
-            quisquam! Harum unde sit culpa debitis.
+          Share your story with the world. Stand out with a 
+          professionally-designed blog website that can be 
+          customized to fit your brand. Build, manage, and promote your blog with Squarespace’s built-in suite of design and marketing tools.
           </p>
-          <button className={styles.button}>Read More</button>
+          <button className={styles.button}>Get Started</button>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    gap:50px;
   }
   
   .select{
@@ -44,7 +45,7 @@
     width: 100%;
     left: 50px;
   }
-  
+
   .input{
     padding: 50px;
     font-size: 64px;
@@ -52,24 +53,34 @@
     outline: none;
     background-color: transparent;
     color: var(--textColor);
+    
+    margin-top: 20px;
   }
-  
+
   .input::placeholder{
     color: #b3b3b1;
   }
   
   .textArea {
     width: 100%;
+    margin-top: 3rem;
+    border: 1px solid;
   }
   
   .publish{
     position: absolute;
     top: 0px;
     right: 0px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border: none;
-    background-color: #1a8917;
+    background-color: #269722f5;
     color: white;
     cursor: pointer;
-    border-radius: 20px;
+    font-weight: 700;
+    margin-top: 5rem;
+    transition: 0.2s;
+  }
+
+  .publish:hover{
+    background-color: #216b1ef5;
   }
