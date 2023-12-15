@@ -43,7 +43,7 @@ const SinglePage = async ({params}) => {
                     <span className={styles.date}>{data.createdAt}</span>
                 </div>
             </div>
-        </div>
+        </div>                                                       
         {data?.img &&
         <div className={styles.imageContainer}>
             <Image src={data.img} fill className={styles.image}/>
