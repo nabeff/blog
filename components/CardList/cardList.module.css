@@ -1,5 +1,7 @@
 .container{
-  flex:5
+  flex:5;
+  border-right: 1px rgb(221, 220, 220) solid ;
+ 
 }
 
 .title{

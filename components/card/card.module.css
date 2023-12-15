@@ -3,6 +3,10 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-bottom: 1rem;
+  border-bottom: 1px rgb(221, 220, 220) solid ;
+  width: 90%;
+  
 }
 
 .imageContainer {
@@ -10,6 +14,8 @@
   height: 200px;
   width: 100px !important;
   position: relative;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
 }
 
 
@@ -27,11 +33,14 @@
 
 .date {
   color: gray;
+  margin-right: 0.5rem;
+  font-size: 12px;
 }
 
 .category {
-  color: crimson;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 0.5rem;
 }
 
 .desc {
@@ -41,12 +50,13 @@
 }
 
 .link {
-  border-bottom: 1px solid crimson;
+  background-color: rgb(241, 241, 241);
+  border-radius: 3rem;
   width: max-content;
-  padding: 2px 0px;
+  padding: 0.4rem 1rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 980px) {
   .imageContainer {
     display: none;
   }

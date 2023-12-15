@@ -1,5 +1,6 @@
 .container {
-  
+  margin-bottom: 2rem;
+  border-bottom: 1px rgb(220, 220, 220) solid;
 }
 
 .title {
@@ -10,7 +11,7 @@
 .categories {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  
   gap: 10px;
 }
 
@@ -35,29 +36,6 @@
   transform: translateY(-7px);
 }
 
-.category.style {
-  background-color: #57c4ff31;
-}
-
-.category.fashion {
-  background-color: #cf66b931;
-}
-
-.category.food {
-  background-color: #0af71234;
-}
-
-.category.travel {
-  background-color: #fc35043f;
-}
-
-.category.culture {
-  background-color: #ffa6394b;
-}
-
-.category.coding {
-  background-color: #1c75e942;
-}
 
 
 
