@@ -11,10 +11,8 @@ const MenuPosts = ({widthImage}) => {
           </div>
           )}
           <div className={styles.textContainer}>
-            <span className={`${styles.category} ${styles.travel}`}>
-              Travel
-              </span>
-              <span className={styles.username}>Spirit </span>
+            
+              <span className={styles.username}>Jean Michelle </span>
             
             <h3 className={styles.postTitle}>Discovering new places broadens your horizons beautifully.
               </h3>
@@ -27,10 +25,8 @@ const MenuPosts = ({widthImage}) => {
           </div>
         )}
           <div className={styles.textContainer}>
-            <span className={`${styles.category} ${styles.culture}`}>
-              Culture
-              </span>
-              <span className={styles.username}>Obama</span>
+            
+              <span className={styles.username}>Victor Hugo</span>
               
             <h3 className={styles.postTitle}>
             Culture intertwines stories, beliefs, and traditions gracefully.
@@ -45,10 +41,8 @@ const MenuPosts = ({widthImage}) => {
           </div>
         )}
           <div className={styles.textContainer}>
-            <span className={`${styles.category} ${styles.food}`}>
-              Food
-              </span>
-              <span className={styles.username}>Ramsey </span>
+            
+              <span className={styles.username}>Gordon Ramsey</span>
              
             <h3 className={styles.postTitle}>
             Food connects cultures through delicious shared experiences.
@@ -62,9 +56,7 @@ const MenuPosts = ({widthImage}) => {
           </div>
         )}
           <div className={styles.textContainer}>
-            <span className={`${styles.category} ${styles.fashion}`}>
-              Fashion
-              </span>
+            
               <span className={styles.username}>Balenciaga </span>
             
             <h3 className={styles.postTitle}>            

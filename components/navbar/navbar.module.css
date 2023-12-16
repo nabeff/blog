@@ -2,10 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 60px;
     width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid;
+    padding: 20px;
+   
+    border-bottom: 1px rgb(243, 243, 243) solid;
   }
   
   .social {
@@ -13,12 +14,26 @@
     gap: 10px;
     flex: 1;
   }
-  
+
+  .imgcontain{
+    margin-right: 1rem;
+    font-family: fantasy;
+  }
+  .size{
+    font-size: 24px;
+  }
+  .flex{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
   .logo {
     flex: 1;
+    justify-content: center;
+    font-size: 34px;
+    align-items: center;
     
-    font-size: 36px;
-    font-weight: bold;
+    
   }
   
   .links {

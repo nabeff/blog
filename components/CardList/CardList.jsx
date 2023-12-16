@@ -3,6 +3,7 @@ import styles from "./cardList.module.css";
 import Pagination from "../pagination/Pagination";
 import Image from "next/image";
 import Card from "../card/Card";
+import CategoryList from "../CategoryList/CategoryList";
 
 const getData = async (page, cat) => {
   const res = await fetch(
@@ -29,15 +30,22 @@ const CardList = async ({ page, cat }) => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Recent Posts</h1>
+      <div className={styles.re}>
+        <div className={styles.st} >
+        <CategoryList/>
+        </div>
+     
+      
+      
+      
       <div className={styles.posts}>
         {posts?.map((item) => (
           <Card item={item} key={item._id} />
         ))}
       </div>
-      <Pagination page={page} hasPrev={hasPrev} hasNext={hasNext} />
+      </div>
     </div>
   );
 };
 
-export default CardList;
+export default CardList;  

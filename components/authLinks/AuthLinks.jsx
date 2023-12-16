@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./authLinks.module.css";
 import { useState } from "react";
 import { signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 
 
 const AuthLinks = () => {
@@ -19,12 +20,15 @@ const AuthLinks = () => {
         </Link>
       ) : (
         <>
+        <Image src='/edit.png'  width={24} height={24} />
           <Link href="/write" className={styles.link}>
-            Write
+           Write
           </Link>
+          
           <span className={styles.link} onClick={signOut} >
             Logout
           </span>
+          
         </>
       )}
       <div className={styles.burger} onClick={() => setOpen(!open)}>

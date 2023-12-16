@@ -1,9 +1,21 @@
 .container{
-  flex:5;
-  border-right: 1px rgb(221, 220, 220) solid ;
+  flex:3;
+  border-right: 1px rgb(243, 243, 243) solid;
+  display: block;;
  
+}
+
+.re{
+  position: relative;
+}
+.st{
+  position: sticky;
+  top: 0px;
+  z-index: 499;
+  background-color: white ;
 }
 
 .title{
   margin: 50px 0px;
 }
+

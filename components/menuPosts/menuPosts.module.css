@@ -5,7 +5,10 @@
     flex-direction: column;
     gap: 35px;
   }
-  
+.username{
+  font-weight: 900;
+  font-size: 13px;
+}
   .item{
     display: flex;
     align-items: center;
@@ -15,14 +18,17 @@
   
   .image{
     border-radius: 50%;
-    border: 3px solid lightgray;
+    
     object-fit: cover;
+   
   }
   
   .imageContainer{
-    flex: 1;
+    flex: 0.4;
     aspect-ratio: 1/1;
     position: relative;
+    width: 32px;
+    height: 32px;
   }
   
   .textContainer{
@@ -32,7 +38,7 @@
   
   
   .postTitle{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--softTextColor);
   }

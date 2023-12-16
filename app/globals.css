@@ -40,10 +40,11 @@
     min-height: 100vh;
     background-color: var(--bg);
     color: var(--textColor);
+   
   }
   
   .wrapper {
-    max-width: 1536px;
+    max-width: 1336px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 80px;
