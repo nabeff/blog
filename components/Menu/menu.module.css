@@ -1,15 +1,9 @@
 .container {
-  flex: 1.5;
-  margin-top: 60px;
-  
+  flex: 1;
+  margin-top: 60px; 
   min-height: 100vh
-    /* Your existing styles */
-   /* Enable vertical scrolling */
-   
-     /* Initial max-height */
-  
-
 }
+
 .by{
   position: relative;
   height:100%;
@@ -17,8 +11,9 @@
 
 .et{
   top: -643px;
-    position: sticky;
+  position: sticky;
 }
+
 .subtitle {
   color: gray;
   font-size: 16px;
@@ -26,14 +21,13 @@
 }
 
 .title {
-  font-size: 28px;
-  font-weight: 900;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 
 .items{ 
   margin-top: 35px ;
- 
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -75,20 +69,6 @@
   color: white;
 }
 
-.category.travel{
-  background-color: #ff7857;
-}
-.category.food{
-  background-color: #ffb14f;
-}
-
-.category.fashion{
-  background-color: #7fb811;
-}
-
-.category.culture{
-  background-color: #ff7887;
-}
 
 
 .detail{
