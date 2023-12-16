@@ -9,7 +9,8 @@
   .item{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    
   }
   
   .image{
@@ -40,25 +41,26 @@
     padding: 3px 8px;
     border-radius: 10px;
     font-size: 12px;
-    color: white;
+    color: black;
+    margin-right: 1rem;
     
    
   }
   
   .category.travel{
-    background-color: #ff7857;
+    background-color: rgb(242,242,242);
     
   }
   .category.food{
-    background-color: #ffb14f;
+    background-color: rgb(242,242,242);
   }
   
   .category.fashion{
-    background-color: #7fb811;
+    background-color: rgb(242,242,242);
   }
   
   .category.culture{
-    background-color: #ff7887;
+    background-color: rgb(242,242,242);
   }
   
   

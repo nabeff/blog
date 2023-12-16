@@ -44,14 +44,18 @@ const Comments = ({ postSlug }) => {
       {status === "authenticated" ? (
         <div className={styles.write}>
           <textarea
-            placeholder="write a comment..."
+            placeholder="What are your thoughts?"
             className={styles.input}
+            
             onChange={(e) => setDesc(e.target.value)}
           />
-          <button className={styles.button} onClick={handleSubmit}>
-            Send
+           <button className={styles.button} onClick={handleSubmit}>
+            Respond
           </button>
+          
+         
         </div>
+        
       ) : (
         <Link href="/login">Login to write a comment</Link>
       )}

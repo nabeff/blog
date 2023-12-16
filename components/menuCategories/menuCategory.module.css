@@ -4,35 +4,36 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    
   }
   
   .categoryItem {
     padding: 10px 25px;
-    border-radius: 10px;
-    font-size: 14px;
+    border-radius: 4rem;
+    font-size: 13px;
   }
   
   .categoryItem.style {
-    background-color: #3179ff50;
+    background-color: rgb(242,242,242);
   }
   
   .categoryItem.fashion {
-    background-color: #cf66b84d;
+    background-color: rgb(242,242,242);
   }
   .categoryItem.food {
-    background-color: #0af71249;
+    background-color: rgb(242,242,242);
   }
   
   .categoryItem.travel {
-    background-color: #fc360452;
+    background-color: rgb(242,242,242);
   }
   
   .categoryItem.culture {
-    background-color: #ffa63962;
+    background-color: rgb(242,242,242);
   }
   
   .categoryItem.coding {
-    background-color: #1cc0e95d;
+    background-color: rgb(242,242,242);
   }
 
 

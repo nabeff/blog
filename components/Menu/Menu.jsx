@@ -12,8 +12,8 @@ function Menu() {
       <h1 className={styles.title}>Most popular</h1>
       <MenuPosts widthImage={false}/>
 
-      <h2 className={styles.subtitle}>Discover By Topic</h2>
-      <h1 className={styles.title}>Categories</h1>
+      
+      <h1 className={styles.title}>Recommended topics</h1>
       <MenuCategories/>
 
       <h2 className={styles.subtitle}>chosen by the editor</h2>
