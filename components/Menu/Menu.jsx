@@ -24,6 +24,7 @@ function Menu() {
       <div className={styles.menuContainer}>
       <MenuPosts widthImage={true}/>
       <Footer />
+      
       </div>
     </div>
     </div>

@@ -1,7 +1,10 @@
+
 import React from "react";
 import styles from "./categoryList.module.css";
 import Link from "next/link";
 import Image from "next/image";
+
+
 
 const getData = async () => {
   const res = await fetch("http://localhost:3000/api/categories", {
@@ -14,6 +17,8 @@ const getData = async () => {
 
   return res.json();
 };
+
+
 
 const CategoryList = async () => {
   const data = await getData();
@@ -33,8 +38,12 @@ const CategoryList = async () => {
           </Link>
         ))}
       </div>
+      
+
     </div>
   );
 };
+
+
 
 export default CategoryList;

@@ -1,9 +1,9 @@
 .categoryList {
-    margin-top: 35px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 3rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     
   }
   
@@ -11,6 +11,8 @@
     padding: 10px 25px;
     border-radius: 4rem;
     font-size: 13px;
+    
+    
   }
   
   .categoryItem.style {

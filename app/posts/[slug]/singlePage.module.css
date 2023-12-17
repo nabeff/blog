@@ -4,20 +4,22 @@
 }
 .infoContainer {
     display: flex;
+ 
     align-items: center;
     gap: 50px;
   }
   
   .textContainer {
-    flex: 4;
-    
+    flex: 3;
+    margin-top: 2rem;
     align-items: center;
     justify-content: center;
    
   }
   
   .title {
-    font-size: 64px;
+    font-size: 40px;
+    margin-bottom: 1.5rem;
     
   }
   
@@ -25,6 +27,9 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px rgb(243, 243, 243) solid;
+    max-width: 50%;
   }
   
   .userImageContainer {

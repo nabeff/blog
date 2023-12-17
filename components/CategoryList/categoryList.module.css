@@ -9,17 +9,14 @@
 
 .categories {
   display: flex;
-  flex-wrap: wrap;
-  
-
- 
+  justify-content: center;
 }
 
 .category {
   display: flex;
   align-items: center;
   text-transform: capitalize;
-  width: 15%;
+  margin-right: 1rem;
   height: 60px;
   transition: transform 250ms;
 }
@@ -32,11 +29,7 @@
 
 
 
-@media screen and (max-width: 1280px) {
-  .category {
-    width: 20%;
-  }
-}
+
 @media screen and (max-width: 1024px) {
   .category {
     width: 25%;
@@ -47,8 +40,22 @@
     width: 45%;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 650px) {
   .category {
     width: 100%;
   }
+  
+
+}
+@media screen and (max-width: 530px) {
+  .category {
+    width: 100%;
+    
+  }
+  
+.categories {
+  font-size: 10px;
+  
+}
+
 }

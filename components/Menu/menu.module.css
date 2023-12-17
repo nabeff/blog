@@ -1,6 +1,6 @@
 .container {
   flex: 1;
-  margin-top: 60px; 
+  
   min-height: 100vh
 }
 
@@ -21,8 +21,9 @@
 }
 
 .title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
+  margin-bottom: 3rem;
 }
 
 
@@ -65,14 +66,14 @@
 .category{
   padding: 3px 8px;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 14px;
   color: white;
 }
 
 
 
 .detail{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .date{

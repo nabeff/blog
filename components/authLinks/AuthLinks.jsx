@@ -19,9 +19,10 @@ const AuthLinks = () => {
           Login
         </Link>
       ) : (
-        <>
-        <Image src='/edit.png'  width={24} height={24} />
+        <div className={styles.container}>
+      
           <Link href="/write" className={styles.link}>
+          <Image src='/edit.png'  width={20} height={20} className={styles.imglink}/>
            Write
           </Link>
           
@@ -29,24 +30,23 @@ const AuthLinks = () => {
             Logout
           </span>
           
-        </>
+        </div>
       )}
       <div className={styles.burger} onClick={() => setOpen(!open)}>
         <div className={styles.line}></div>
         <div className={styles.line}></div>
         <div className={styles.line}></div>
       </div>
+
       {open && (
         <div className={styles.responsiveMenu}>
-          <Link href="/">Homepage</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
+          
           {status === "notauthenticated" ? (
             <Link href="/login">Login</Link>
           ) : (
             <>
-              <Link href="../../app/write">Write</Link>
-              <span className={styles.link}>Logout</span>
+              <Link href="/write" >Write</Link>
+              <Link href="/" onClick={signOut} >Logout</Link>
             </>
           )}
         </div>
