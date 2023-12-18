@@ -4,23 +4,25 @@
     flex-direction: column;
     gap:50px;
     margin-bottom: 7rem;
+    justify-content: center;
   }
   
   .select{
     margin-top: 50px;
     padding: 10px 30px;
-    margin-left: 50px;
+   
     width: max-content;
     border-radius: 1rem;
     border: none;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px;
+   
   }
   
   .editor {
     display: flex;
-    gap: 30px;
-    height: 600px;
+    
+    height: 300px;
     position: relative;
     
   }
@@ -49,7 +51,7 @@
     position: absolute;
     z-index: 999;
     width: 10%;
-    left: 50px;
+    right: 50px;
   }
 
 
@@ -62,33 +64,33 @@
     color: var(--textColor);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px;
     margin-top: 10px;
+    max-width: 70%;
   }
 
   .input::placeholder{
     color: #b3b3b1;
   }
   
+  .flex{
+    display:flex;
+    gap:20px;
+  }
   .textArea {
-    width: 80%;
-   margin-left: 2rem;
+    width: 70%; 
     border:none;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px;
   }
   
   .publish{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    
     border: none;
-    padding: 12px 40px;
+    padding: 12px 12px;
     background-color: rgb(26, 137, 23);
     border-radius: 2rem;
-   
+    width: 100px;
     color: white;  
     cursor: pointer;
     font-weight:600;
-    margin-top: 5rem;
+   
     transition: 0.2s;
     
   }
