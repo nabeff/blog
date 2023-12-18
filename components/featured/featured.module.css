@@ -1,6 +1,7 @@
 .container {
     margin-top: 30px;
-    margin-bottom: 30px;
+   
+    border-bottom: 1px rgb(243, 243, 243) solid;
   }
   
   .title {
@@ -12,7 +13,7 @@
 .grid{
   display:grid;
   
-  grid-template-columns: repeat(2, minmax(60px, 1fr));
+  grid-template-columns: repeat(3, minmax(60px, 1fr));
 }
 .flex{
   display: flex;
@@ -59,10 +60,25 @@
   margin-top: 5px;
 }
 
+
+@media screen and (max-width: 1000px) {
+  .grid{
+    display:grid;
+    
+    grid-template-columns: repeat(2, minmax(60px, 1fr));
+  }
+}
+
 @media screen and (max-width: 728px) {
   .grid{
     display:grid;
     
     grid-template-columns: repeat(1, minmax(60px, 1fr));
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .flex{
+    padding-left: 0;
   }
 }

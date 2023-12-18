@@ -6,7 +6,7 @@
   }
   
   .wrapper {
-    background-color: var(--softBg);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px;
     padding: 100px 120px;
     display: flex;
     flex-direction: column;

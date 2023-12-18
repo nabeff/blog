@@ -1,6 +1,6 @@
 .container {
   flex: 1;
-  
+  margin-top: 1.5rem;
   min-height: 100vh
 }
 
@@ -10,7 +10,7 @@
 }
 
 .et{
-  top: -643px;
+  top: -400px;
   position: sticky;
 }
 
@@ -23,7 +23,7 @@
 .title {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 

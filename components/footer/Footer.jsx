@@ -12,10 +12,7 @@ const Footer = () => {
           <h1 className={styles.logoText}>NabilBlogg</h1>
         </div>
         <p className={styles.desc}>
-        select the arrow icon on any story to conveniently access 
-        it for reading or to leave a comment. Your feedback
-         is valued by the editor and other users, providing
-         an opportunity to share your opinions.
+        Give that arrow a tap on any story to read or comment. And once you're in, get ready to write and sprinkle your thoughts like confetti. Let's join the fun!
         </p>
         <div className={styles.icons}>
           <Image src="/facebook.png" alt="" width={18} height={18} />

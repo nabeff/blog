@@ -2,39 +2,48 @@
   margin-bottom: 50px;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   border-bottom: 1px rgb(243, 243, 243) solid;
   width: 90%;
   
 }
 
 .imageContainer {
-  flex: 0.5;
-  height: 100px;
-  width: 60px !important;
+  flex: 0.9;
+  height: 130px;
+  width: 90px;
   position: relative;
   margin-bottom: 2rem;
   margin-right: 1rem;
 }
 
+.title{
+  font-size: 20px;
+  font-weight: 900;
+}
 
 
 .textContainer {
   flex: 3;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
+
 .detail{
   margin-bottom: 2rem;
   align-items: center;
   align-content: center;
- 
+  
 }
 
-.image {
-  object-fit: cover;
+.readingTime{
+  color: #6B6B6B;
+  font-size: 12px;
+  margin-right: 10px;
+
 }
+
 
 .date {
   color: gray;
@@ -44,17 +53,18 @@
 
 .category {
   font-size: 13px;
-  font-weight: 600;
+ 
   margin-right: 0.5rem;
   text-transform: capitalize;
   background-color: rgb(241, 241, 241);
   border-radius: 3rem;
   width: max-content;
   padding: 2px 8px;
+  color: #6B6B6B;
 }
 
 .desc {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   color: var(--softTextColor);
   margin-bottom: 1rem;
