@@ -1,7 +1,8 @@
 .container{
   flex:2.5;
   border-right: 1px rgb(243, 243, 243) solid;
-  display: block;;
+  display: block;
+  margin-bottom: 1rem;
  
 }
 

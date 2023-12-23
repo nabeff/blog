@@ -5,7 +5,13 @@ import Menu from '@/components/Menu/Menu'
 import Comments from "@/components/comments/Comments"
 
 
+
+
+
 const getData = async (slug) => {
+
+ 
+
     const res = await fetch(
       `http://localhost:3000/api/posts/${slug}`,
       {
@@ -22,9 +28,16 @@ const getData = async (slug) => {
 
 const SinglePage = async ({params}) => {
 
+  function readingTime(text) {
+    const wpm = 225; // Assuming average reading speed
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    return time;
+  }
+ 
     const {slug} = params;
     const data = await getData(slug)
-
+    const estimatedTime = readingTime(data?.desc);
   return (
     
   
@@ -43,7 +56,12 @@ const SinglePage = async ({params}) => {
                 }
                 <div className={styles.userTextContainer}>
                     <span className={styles.username}>{data?.user.name}</span>
+                    <div className={styles.gap}>
                     <span className={styles.date}>{data.createdAt.substring(0,10)}</span>
+                    <span className={styles.readingTime}>
+                       {estimatedTime} min read 
+                      </span>
+                      </div>
                 </div>
             </div>
            
@@ -69,7 +87,7 @@ const SinglePage = async ({params}) => {
             
         </div>
         
-        <Menu />                                                       
+                                                             
       </div>
       
       

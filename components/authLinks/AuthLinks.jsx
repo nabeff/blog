@@ -1,15 +1,38 @@
 "use client";
 import Link from "next/link";
 import styles from "./authLinks.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 
 
 const AuthLinks = () => {
   const [open, setOpen] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
 
-  const {status} = useSession();
+  const { status } = useSession();
+
+  useEffect(() => {
+    const checkViewportWidth = () => {
+      const mobileViewWidth = 640; // Define your mobile view width here
+      setIsMobileView(window.innerWidth < mobileViewWidth);
+    };
+
+    checkViewportWidth();
+
+    const handleResize = () => {
+      checkViewportWidth();
+      if (!isMobileView && open) {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isMobileView, open]);
 
   
   return (
@@ -32,15 +55,23 @@ const AuthLinks = () => {
           
         </div>
       )}
-      <div className={styles.burger} onClick={() => setOpen(!open)}>
+       <div className={`${styles.burger} ${open ? styles.open : ''}`} onClick={() => setOpen(!open)}>
         <div className={styles.line}></div>
         <div className={styles.line}></div>
         <div className={styles.line}></div>
       </div>
 
       {open && (
-        <div className={styles.responsiveMenu}>
+         <div className={`${styles.responsiveMenu} ${open ? styles.open : ''}`}>
           
+          {status === "notauthenticated" ? (
+            <Link href="/login">Login</Link>
+          ) : (
+            <>
+              <Link href="/write" >Write</Link>
+              <Link href="/" onClick={signOut} >Logout</Link>
+            </>
+          )}
           {status === "notauthenticated" ? (
             <Link href="/login">Login</Link>
           ) : (

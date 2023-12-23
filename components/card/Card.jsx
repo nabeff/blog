@@ -24,8 +24,9 @@ const Card = ({key, item}) => {
         </h3>
 
         </Link  >
+        <Link href={`/posts/${item.slug}`}>
         <div className={styles.desc} dangerouslySetInnerHTML={{ __html: item?.desc.substring(0,200) }} />
-        
+        </Link  >
         <div className={styles.detail}>
         <span className={styles.category}>{item.catSlug}</span>
             <span className={styles.date}>{item.createdAt.substring(0,10)} </span>
@@ -40,9 +41,13 @@ const Card = ({key, item}) => {
         
   </div>
   {item.img && (
+      
         <div className={styles.imageContainer}> 
+        <Link href={`/posts/${item.slug}`}>
             <Image src={item.img} alt="" fill className={styles.image} />
+            </Link  >
         </div>
+         
         )}
 </div>
   )
