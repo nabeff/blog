@@ -5,20 +5,7 @@ import styles from "./menuPosts.module.css"
 const MenuPosts = ({widthImage}) => {
   return (
     <div className={styles.items}>
-        <Link  href="/" className={styles.item}>
-          {widthImage && ( <div className={styles.imageContainer}>
-              <Image src='/fashion.png' alt='' fill className={styles.image}/>
-          </div>
-          )}
-          <div className={styles.textContainer}>
-            
-              <span className={styles.username}>Jean Michelle </span>
-            
-            <h3 className={styles.postTitle}>Discovering new places broadens your horizons beautifully.
-              </h3>
-              
-          </div>
-        </Link>
+        
         <Link  href="/" className={styles.item}>
         {widthImage && ( <div className={styles.imageContainer}>
               <Image src='/coding.png' alt='' fill className={styles.image}/>
