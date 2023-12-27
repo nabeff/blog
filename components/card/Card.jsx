@@ -9,8 +9,24 @@ function readingTime(text) {
   return time;
 }
 
+function getTimeDifference(createdAt) {
+  const currentDate = new Date();
+  const createdDate = new Date(createdAt);
+  const difference = currentDate.getTime() - createdDate.getTime();
+  const daysDifference = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+  if (daysDifference === 0) {
+    return 'Today';
+  } else if (daysDifference === 1) {
+    return 'Yesterday';
+  } else {
+    return `${daysDifference} days ago`;
+  }
+}
+
 const Card = ({key, item}) => {
 
+  const timeSinceCreation = getTimeDifference(item.createdAt);
   const estimatedTime = readingTime(item?.desc);
   return (
     <div className={styles.container} key={key}>
@@ -18,9 +34,10 @@ const Card = ({key, item}) => {
         <div className={styles.textContainer}>
         
         <Link href={`/posts/${item.slug}`}>
-      
+        <span className={styles.date}> {timeSinceCreation}</span>
         <h3 className={styles.title}> 
             {item.title}
+            
         </h3>
 
         </Link  >
@@ -29,7 +46,7 @@ const Card = ({key, item}) => {
         </Link  >
         <div className={styles.detail}>
         <span className={styles.category}>{item.catSlug}</span>
-            <span className={styles.date}>{item.createdAt.substring(0,10)} </span>
+            
           
             <span className={styles.readingTime}>
             {estimatedTime} min read .

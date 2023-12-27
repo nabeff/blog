@@ -12,7 +12,7 @@
     padding: 10px 30px;
    
     width: max-content;
-    border-radius: 1rem;
+   
     border: none;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px;
@@ -85,7 +85,7 @@
     border: none;
     padding: 12px 12px;
     background-color: rgb(26, 137, 23);
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 100px;
     color: white;  
     cursor: pointer;
