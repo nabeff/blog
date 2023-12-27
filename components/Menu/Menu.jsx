@@ -13,8 +13,7 @@ function Menu() {
         <div className={styles.et}>
      
       <h1 className={styles.title}>Most popular</h1>
-      <MenuPosts widthImage={false}/>
-
+      <MenuPosts widthImage={true}/>
       
       <h1 className={styles.title}>Recommended topics</h1>
       <MenuCategories/>
@@ -22,7 +21,9 @@ function Menu() {
      
       <h1 className={styles.title}>Staff Pick</h1>
       <div className={styles.menuContainer}>
-      <MenuPosts widthImage={true}/>
+      
+      <MenuPosts widthImage={false}/>
+
       <Footer />
       
       </div>
