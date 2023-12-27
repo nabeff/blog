@@ -70,4 +70,6 @@ const Card = ({key, item}) => {
   )
 }
 
+
+
 export default Card

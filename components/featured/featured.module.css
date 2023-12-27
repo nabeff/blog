@@ -2,6 +2,7 @@
     margin-top: 30px;
    
     border-bottom: 1px rgb(243, 243, 243) solid;
+    
   }
   
   .title {
@@ -12,15 +13,17 @@
 
 .grid{
   display:grid;
-  
+  margin-bottom: 30px;
   grid-template-columns: repeat(3, minmax(60px, 1fr));
 }
+
 .flex{
   display: flex;
   flex-direction: row;
   padding: 1rem;
   gap: 10px;
 }
+
 .titre{
   display: flex;
   
@@ -28,6 +31,7 @@
   margin-bottom: 16px;
   gap: 10px;
 }
+
 .insideFlex{
   display: flex;
   flex-direction: row;

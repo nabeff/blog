@@ -62,26 +62,17 @@ const AuthLinks = () => {
       </div>
 
       {open && (
-         <div className={`${styles.responsiveMenu} ${open ? styles.open : ''}`}>
-          
-          {status === "notauthenticated" ? (
-            <Link href="/login">Login</Link>
-          ) : (
-            <>
-              <Link href="/write" >Write</Link>
-              <Link href="/" onClick={signOut} >Logout</Link>
-            </>
-          )}
-          {status === "notauthenticated" ? (
-            <Link href="/login">Login</Link>
-          ) : (
-            <>
-              <Link href="/write" >Write</Link>
-              <Link href="/" onClick={signOut} >Logout</Link>
-            </>
-          )}
-        </div>
-      )}
+  <div className={`${styles.responsiveMenu} ${open ? styles.open : ''}`}>
+    {status === 'authenticated' ? (
+      <>
+        <Link href="/write">Write</Link>
+        <Link href="/" onClick={signOut}>Logout</Link>
+      </>
+    ) : (
+      <Link href="/login">Login</Link>
+    )}
+  </div>
+)}
     </>
   );
 };

@@ -24,6 +24,11 @@ const CardList = async ({ page, cat }) => {
   const { posts, count } = await getData(page, cat);
 
   const POST_PER_PAGE = 2;
+  const sortedPosts = posts.sort((a, b) => {
+    const dateA = new Date(a.createdAt);
+    const dateB = new Date(b.createdAt);
+    return dateB - dateA; // Sorting in descending order
+  });
 
   const hasPrev = POST_PER_PAGE * (page - 1) > 0;
   const hasNext = POST_PER_PAGE * (page - 1) + POST_PER_PAGE < count;
@@ -31,21 +36,17 @@ const CardList = async ({ page, cat }) => {
   return (
     <div className={styles.container}>
       <div className={styles.re}>
-        <div className={styles.st} >
-        <CategoryList/>
+        <div className={styles.st}>
+          <CategoryList />
         </div>
-     
-      
-      
-      
-      <div className={styles.posts}>
-        {posts?.map((item) => (
-          <Card item={item} key={item._id} />
-        ))}
-      </div>
+        <div className={styles.posts}>
+          {sortedPosts?.map((item) => (
+            <Card item={item} key={item._id} />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
-export default CardList;  
+export default CardList;
