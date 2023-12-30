@@ -6,8 +6,16 @@
     width: 100%;
     background-color: #ffc017;
     border-bottom: 1px black solid;
+    position: relative;
    
   }
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Adjust z-index as needed */
+}
+
 
   .social {
     display: flex;
@@ -31,13 +39,14 @@
     display: flex;
     align-items: center;
     margin-left: 2rem;
+    
   }
   .logo {
     flex: 1;
     justify-content: center;
     font-size: 34px;
     align-items: center;
-    margin-left: 4rem;
+    margin-left: 1rem;
     
     
   }
@@ -47,7 +56,7 @@
     align-items: center;
     gap: 20px;
     font-size: 20px;
-    margin-right: 4rem;
+    margin-right: 1rem;
   }
 
   .link{

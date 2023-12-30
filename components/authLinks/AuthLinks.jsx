@@ -38,9 +38,13 @@ const AuthLinks = () => {
   return (
     <>
       {status === "unauthenticated" ? (
+        
         <Link href="/login" className={styles.link}>
+          <button className={styles.button}>
           Login
+          </button>
         </Link>
+   
       ) : (
         <div className={styles.container}>
       
@@ -50,7 +54,9 @@ const AuthLinks = () => {
           </Link>
           
           <span className={styles.link} onClick={signOut} >
+          <button className={styles.button}>
             Logout
+            </button>
           </span>
           
         </div>

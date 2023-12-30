@@ -3,6 +3,7 @@
     font-size: 16px;
     align-content: center;
     margin-left: 1rem;
+   
   }
 .imglink{
   margin-right: 0.3rem;
@@ -60,9 +61,18 @@
     font-size: 18px;
     z-index: 999;
    border-bottom: 1px black solid;
+   background-color: #ffc017;
   }
   
-  
+  .button{
+    padding: 8px 40px;
+    border-radius: 3rem;
+    background-color: black;
+    color: #ffff;
+    font-size: 1rem;
+    outline: none;
+}
+
   @media screen and (max-width: 640px) {
     .burger {
       display: flex;
